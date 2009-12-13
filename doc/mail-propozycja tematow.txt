@@ -1,0 +1,32 @@
+Witamy,
+
+Na rejsie zapoznali¶my siê z dostêpnymi wówczas artyku³ami i tematami, przez ten weekend nadrobili¶my zaleg³o¶ci w nowych, które w miêdzyczasie przyby³y do teczki.
+
+Bardzo podoba nam siê praca Ohtsuki i Iwasy z 2004 roku (dotarli¶my tak¿e do jej kontynuacji z roku 2006, gdzie dok³adniej przeanalizowane s± w³a¶ciwo¶ci znalezionych strategii "leading eight"). Podoba nam siê idea systematycznego sprawdzenia ca³ej przestrzeni strategii (w tym wypadku opartej na informacji trzeciego rzêdu - reputacji obu graczy oraz akcji). Otrzymane wyniki, strategie "leading eight" s± bardzo mocne, okazuje siê, ¿e wszystkie maj± bardzo intuicyjne w³a¶ciwo¶ci:
+1) Pomaganie dobrym jest dobre. (2 bity)
+2) Nie pomaganie dobrym jest z³e (2 bity)
+2) Karanie zlych przez dobrych nie jest z³e (1 bit)
+Te w³asno¶ci s± intuicyjne i ustalaj± 5 spo¶ród 8 bitów dynamiki reputacji. Pozosta³e 3 bity daja siê wype³niæ na 8 sposobów, st±d osiem dobrych strategii - "leading eight".
+Okazuje siê wiêc, ¿e przy informacji trzeciego rzêdu strategie te nie pozostawiaj± ¿adnego dylematu - z ka¿dej sytuacji istnieje wyj¶cie które jest dobre w intuicyjnym sensie. Inna sytuacja by³a w Image Scoringu opartym na informacji pierwszego rzêdu, gdzie karanie by³o kosztowne - tracili¶my przez to w³asn± reputacjê. Tutaj takiego dylematu nie ma.
+Mo¿na by rozszerzyæ ten model na gry trzyosobowe. Dynamika reputacji sta³aby siê w takim przypadku wektorem 12 bitowym, a strategia 6 bitowym. Aby wiêc sprawdziæ wszystkie dynamiki i dla ka¿dej strategii to czy jest ESS dokonaæ nale¿a³oby porównania 2^12 * (2^6)^2 = 2^24 ~= 10^7 par strategii. Dla ka¿dej pary rozwi±zaæ nale¿y odpowiednio wyprowadzone równanie ró¿niczkowe etc... w ka¿dym razie spokojnie mie¶ci siê to w mo¿liwo¶ciach obliczeniowych wspó³czesnych komputerów.
+Z drobnych szczegó³ów technicznych, w pracy tej korzystali z tego, ¿e h* w granicy czasu zbiega do jedynej stabilnej warto¶ci niezale¿nie od reputacji pocz±tkowej, bo równanie ró¿niczkowe na h by³o drugiego stopnia. W przypadku gier trzy (n) osobowych równanie to bêdzie trzeciego (n-tego) stopnia i nie bêdzie ju¿ tak ³atwo, ale do tego wystarczy chyba do³o¿yæ warunek pocz±tkowej reputacji mutantów (ew. sprawdzaæ przypadki).
+W grze trzyosobowej pojawiaj± siê nowe dylematy, takie jak np. czy gdy gram z jednym przeciwnikiem dobrym i jednym z³ym, to powinienem ukaraæ z³ego, czy te¿ pomóc dobremu? Czy powinno byæ wybaczone, ¿e defectuje przeciwko dobremu osobnikowi dla ukarania z³ego? Pojawiaj± siê dylematy, które nie tak ³atwo rozwi±zaæ jak dla gier dwuosobowych. Wyniki mog± byæ bardzo zale¿ne od parametrów gry (wspó³czynnika mno¿enia wspólnej puli w Public Goods, progu w Tragedy of Commons), warto wiêc sprawdziæ to dla ró¿nych gier i ró¿nych parametrów.
+
+1) Nasz pierwszy pomys³ to wiêc badanie ewolucyjnej stabilno¶ci dynamik reputacji i strategii opartych na informacji trzeciego rzêdu w grach Public Goods i Tragedy of Commons z ró¿nymi parametrami w sposób taki jak w pracy Ohtsuki i Iwasy z 2004 roku.
+
+Ohtsuki i Iwasa robili to modelem analitycznym. Równolegle wysz³a praca Brandta i Sigmunda (The logic of reprobation: assessment and action rules for indirect reciprocation - Brandt, Sigmund 2004, nie z teczki) którzy ten sam (aczkolwiek na mniejszej przestrzeni przeszukiwañ) analizowali za pomoc± symulacji stochastycznej na populacjach skoñczonych. Oni robili co¶ podobnego, ale:
+1) badaj±c nie tylko ewolucyjn± stabilno¶æ jednolitej populacji, ale te¿ ewolucjê populacji mieszanych -- np. nie tylko ewolucyjn± stabilno¶æ danej strategii, ale te¿ to, czy sama mo¿e byæ naje¼d¼c± etc.
+2) przyjmuj±c bezpo¶redni model obserwacji - ka¿dy osobnik ma swoj± prywatn± opinie o innych.
+3) ka¿dy osobnik ma swoj± w³asn± normê.
+Sprawdzali, do czego ewoluowa³y pocz±tkowo losowe populacje, de facto sprawdzali wiêc ewolucjê norm.
+Podobnie jak Chalub, Santos, Pacheco w dwóch pracach z teczki...
+Modele z tych prac te¿ mo¿naby przenie¶æ na gry trzyosobowe.
+
+2) Nasz drugi pomys³ to wiêc badanie ewolucji norm i dynamik populacji w grach Public Goods i Tragedy of Commons na podstawie modeli analogicznych do którego¶ z modeli z Brandt, Sigmund lub Chalub, Santos, Pacheco.
+
+Mo¿na te¿ w pracy licencjackiej po³±czyæ te dwie rzeczy. Najpierw analitycznie wyznaczyæ ewolucyjnie stabilne strategie na nieskoñczonych populacjach wg modelu Ohtsuki i Iwasy, a nastêpnie sprawdziæ ich dzia³anie symulacyjnie w populacjach skoñczonych -- nie tylko ewolucyjna stabilno¶æ, ale te¿ radzenie sobie w populacjach mieszanych, koegzystowanie z innymi strategiami, umiejêtno¶æ najechania defektorów etc.
+
+
+Pozdrawiamy,
+Ala £uszczak
+Julek Sompolski
